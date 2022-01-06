@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 import useAuth from '../../hooks/userAuth';
 
-import {FooterContainer, FooterWrapper, Icons} from './styles';
+import { FooterContainer, FooterWrapper, Icons } from './styles';
 import UserCircle from '../UserCircle';
 
 import { FiGithub } from "react-icons/fi";

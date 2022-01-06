@@ -4,7 +4,7 @@ import Router from './routes';
 
 import { AuthProvider } from './context/AuthContext';
 
-import {theme} from './styles/theme'
+import { theme } from './styles/theme'
 import GlobalStyle from './styles/globalStyles'
 
 function App() {

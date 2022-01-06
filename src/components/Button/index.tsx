@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes } from 'react';
-import {ButtonContainer} from './styles';
+import { ButtonContainer } from './styles';
 
 
 const Button = (props: ButtonHTMLAttributes<HTMLButtonElement>) => {

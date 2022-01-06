@@ -1,4 +1,4 @@
-import {CircleContainer} from './styles';
+import { CircleContainer } from './styles';
 
 
 interface UserInfo {

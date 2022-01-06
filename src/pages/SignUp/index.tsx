@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import useAuth from '../../hooks/userAuth';
 
-import {Wrapper, Background, InputContainer, ButtonContainer} from './styles';
+import { Wrapper, Background, InputContainer, ButtonContainer } from './styles';
 import background from '../../assets/images/background-login.jpg';
 import logo from '../../assets/images/logo-tqi.svg';
 
@@ -68,28 +68,34 @@ const SignUp = () => {
         <>
           <Wrapper>
             <Background image={background}/>
-            <Wrapper>
+            <Card width='300px' height='auto' noShadow borderRadius='0px'>
+              <Wrapper>
+                  <InputContainer>
+                      <Input placeholder='Nome' value={name} onChange={e => setname(e.target.value)} />
+                      <Input placeholder='Sobrenome' value={lastname} onChange={e => setLastname(e.target.value)} />
+                      <Input placeholder='CPF' value={cpf} onChange={e => setCpf(e.target.value)} />
+                      <Input placeholder='RG' value={rg} onChange={e => setRg(e.target.value)} />
+                      <Input placeholder='Renda' value={income} onChange={e => setIncome(e.target.valueAsNumber)} type="number"/>
+                      <Input placeholder='Email' value={email} onChange={e => setEmail(e.target.value)} />
+                      <Input placeholder='Username' value={username} onChange={e => setUsername(e.target.value)} />
+                      <Input placeholder='Senha' value={password} onChange={e => setPassword(e.target.value)} type="password" />
+                  </InputContainer>
+              </Wrapper>
+            </Card>
+            <Card width='300px' height='auto' noShadow borderRadius='0px'>
+              <Wrapper>
                 <InputContainer>
-                    <Input placeholder='Nome' value={name} onChange={e => setname(e.target.value)} />
-                    <Input placeholder='Sobrenome' value={lastname} onChange={e => setLastname(e.target.value)} />
-                    <Input placeholder='CPF' value={cpf} onChange={e => setCpf(e.target.value)} />
-                    <Input placeholder='RG' value={rg} onChange={e => setRg(e.target.value)} />
-                    <Input placeholder='Renda' value={income} onChange={e => setIncome(e.target.valueAsNumber)} type="number"/>
-                    <Input placeholder='Email' value={email} onChange={e => setEmail(e.target.value)} />
-                    <Input placeholder='Username' value={username} onChange={e => setUsername(e.target.value)} />
-                    <Input placeholder='Senha' value={password} onChange={e => setPassword(e.target.value)} type="password" />
+                  <Input placeholder='Logradouro' value={publicArea} onChange={e => setpublicArea(e.target.value)} />
+                  <Input placeholder='Bairro' value={district} onChange={e => setDistrict(e.target.value)} />
+                  <Input placeholder='Cidade' value={city} onChange={e => setCity(e.target.value)} />
+                  <Input placeholder='Estado' value={state} onChange={e => setState(e.target.value)} />
+                  <Input placeholder='CEP' value={zipCode} onChange={e => setZipCode(e.target.value)} />
+                  <Input placeholder='Numero da casa' value={houseNumber} onChange={e => setHouseNumber(e.target.valueAsNumber)} type="number"/>
+                  <img src={logo} width={160} height={61} alt="logo TQI" />
                 </InputContainer>
-            </Wrapper>
-            <Wrapper>
-              <InputContainer>
-                <Input placeholder='Logradouro' value={publicArea} onChange={e => setpublicArea(e.target.value)} />
-                <Input placeholder='Bairro' value={district} onChange={e => setDistrict(e.target.value)} />
-                <Input placeholder='Cidade' value={city} onChange={e => setCity(e.target.value)} />
-                <Input placeholder='Estado' value={state} onChange={e => setState(e.target.value)} />
-                <Input placeholder='CEP' value={zipCode} onChange={e => setZipCode(e.target.value)} />
-                <Input placeholder='Numero da casa' value={houseNumber} onChange={e => setHouseNumber(e.target.valueAsNumber)} type="number"/>
-              </InputContainer>
-            </Wrapper>
+                
+              </Wrapper>
+            </Card>
           </Wrapper>
           <Wrapper>
             <ButtonContainer>

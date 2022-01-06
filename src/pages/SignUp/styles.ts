@@ -5,8 +5,9 @@ export const Wrapper = styled.main`
     display: flex;
     padding: 5px;
     justify-content: center;
-    background: ${({theme}) => theme.colors.tertiary};
+    background: ${({theme}) => theme.colors.backgroundLight};
 `
+
 
 export const Background = styled.div<{image: any}>`
     position: absolute;

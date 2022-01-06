@@ -1,5 +1,5 @@
 import { InputHTMLAttributes } from 'react';
-import {InputContainer} from './styles';
+import { InputContainer } from './styles';
 
 
 const Input = (props: InputHTMLAttributes<HTMLInputElement>) => {

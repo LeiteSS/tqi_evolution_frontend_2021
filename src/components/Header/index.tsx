@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 import useAuth from '../../hooks/userAuth';
 
-import {HeaderContainer, HeaderWrapper, UserInfo} from './styles';
+import { HeaderContainer, HeaderWrapper, UserInfo } from './styles';
 import UserCircle from '../UserCircle';
 
 import logo from '../../assets/images/logo-tqi.svg';

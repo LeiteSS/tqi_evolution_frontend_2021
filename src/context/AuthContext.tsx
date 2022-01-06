@@ -1,5 +1,4 @@
-import { createContext, useEffect, useState, useCallback } from "react";
-import { AxiosResponse } from "axios";
+import { createContext, useState } from "react";
 
 import { signIn, signUp, SignInData, SignUpData, me } from '../services/resources/users';
 
@@ -65,10 +64,6 @@ export const AuthProvider: React.FC = ({children}) => {
 
   const userSignUp = async (userData: SignUpData) => {
     const {data} = await signUp(userData);
-
-    /*if (data.token) {
-      localStorage.setItem('@TQI:Token', data.token)
-    }*/
 
     return data;
   }

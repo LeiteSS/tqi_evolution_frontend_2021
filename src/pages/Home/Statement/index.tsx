@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { StatementItemContainer, StatementItemImage, StatementItemInfo } from './styles';
 import { FiDollarSign } from 'react-icons/fi'
@@ -7,8 +7,6 @@ import { FiDollarSign } from 'react-icons/fi'
 import { detailLoan } from '../../../services/resources/loans';
 
 import Button from '../../../components/Button';
-import Modal from '../../../components/Modal';
-import Skeleton from '../../../components/Skeleton';
 
 import { format, parseISO } from 'date-fns'
 
