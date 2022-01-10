@@ -38,6 +38,7 @@ const api = axios.create({
   baseURL: 'https://tqi-evolution-2022.herokuapp.com'
 })
 ```
+P.S.: Também é preciso mudar as URLs dentro da anotação `@CrossOrigin` nas controllers: 'LoansController' e 'UsersController' para http://localhost:3000.
 ## Atribuição
 Estes projetos usam [**Gradle**](https://gradle.org), [**Lombok**](https://projectlombok.org), [**Swagger 2**](https://swagger.io), **Spring Boot Data JPA**, **Spring Boot JDBC**, [**PostgreSQL**](https://www.postgresql.org), **Spring Boot Validation**, **Spring Boot Web**, **Spring Boot Security**, [**Json Web Token**](https://jwt.io), [**Typescript**](https://www.typescriptlang.org), [**Yarn**](https://yarnpkg.com), [**Node.Js**](https://nodejs.org/en/), [**Axios**](https://axios-http.com/docs/intro), [**Styled-component**](https://axios-http.com/docs/intro), [**date-fns**](https://date-fns.org), **react Dom** e **React Router Dom**.
 
